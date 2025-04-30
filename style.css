@@ -32,11 +32,37 @@ ol {
     --spacing-500: 40px;
 }
 
-body {
+html {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-style: normal;
+}
+
+body {
     background-color: #FAFAFA;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    max-width: 540px;
+    min-width: 316px;
+    text-align: center;
+    margin: 70px auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    inline-size: 350px;
+    block-size: 250px;
+    background-color: skyblue;
 }
 
 .text-preset-1 {
