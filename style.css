@@ -23,6 +23,7 @@ ol {
     --color-grey-500: hsl(234, 12%, 34%);
     --color-grey-400: hsl(212, 6%, 44%);
     --color-white: hsl(0, 0%, 100%);
+    --color-shadow: #83A6D27F;
 
     /* Spacing */
     --spacing-100: 8px;
@@ -55,6 +56,14 @@ header {
     margin: 70px 0px;
 }
 
+h3 {
+    margin-bottom: 6px;
+}
+
+img {
+    float: right;
+}
+
 .cards {
     max-width: 1114px;
     display: flex;
@@ -81,8 +90,16 @@ header {
 }
 
 .card {
+    padding: var(--spacing-400);
     height: 250px;
-    background-color: skyblue;
+    background-color: var(--color-white);
+    border-radius: var(--spacing-100);
+    box-shadow: 0px 15px 30px -11px var(--color-shadow);
+    overflow: hidden;
+
+    p {
+        margin-bottom: var(--spacing-400);
+    }
 }
 
 .text-preset-1 {
@@ -120,6 +137,31 @@ header {
     line-height: 1.6;
     font-weight: 400;
     color: var(--color-grey-500);
+}
+
+.decor {
+    position: relative;
+    /* TODO: Make the decor line as wide as the whole card (including padding) */
+    width: 100%;
+    height: 4px;
+    left: calc(var(--spacing-400) * -1);
+    top: calc(var(--spacing-400) * -1);
+}
+
+.red {
+    background-color: var(--color-red);
+}
+
+.cyan {
+    background-color: var(--color-cyan);
+}
+
+.orange {
+    background-color: var(--color-orange);
+}
+
+.blue {
+    background-color: var(--color-blue);
 }
 
 @media (max-width: 375px) {
