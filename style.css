@@ -25,7 +25,7 @@ ol {
     --color-grey-400: hsl(212, 6%, 44%);
     --color-white: hsl(0, 0%, 100%);
     /* TODO: Convert it to hsl() */
-    --color-shadow: #83A6D27F;
+    --color-shadow: #83a6d27f;
 
     /* Spacing */
     --spacing-100: 8px;
@@ -36,13 +36,13 @@ ol {
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-style: normal;
 }
 
 body {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
 }
 
 main {
@@ -141,7 +141,7 @@ img {
 }
 
 .text-preset-5 {
-    font-size: .86rem;
+    font-size: 0.86rem;
     line-height: 1.6;
     font-weight: 400;
     color: var(--color-grey-500);
@@ -170,7 +170,6 @@ img {
 }
 
 @media (max-width: 375px) {
-
     .text-preset-1,
     .text-preset-2 {
         font-size: 1.6rem;
