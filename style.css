@@ -93,7 +93,6 @@ img {
 }
 
 .card {
-    padding: var(--spacing-400);
     height: 250px;
     background-color: var(--color-white);
     border-radius: var(--spacing-100);
@@ -103,6 +102,12 @@ img {
     p {
         margin-bottom: var(--spacing-400);
     }
+}
+
+.padding {
+    width: 100%;
+    height: 100%;
+    padding: var(--spacing-400);
 }
 
 .text-preset-1 {
@@ -144,11 +149,8 @@ img {
 
 .decor {
     position: relative;
-    /* TODO: Make the decor line as wide as the whole card (including padding) */
-    width: calc(100% + (2 * var(--spacing-400)));
+    width: 100%;
     height: 4px;
-    left: calc(var(--spacing-400) * -1);
-    top: calc(var(--spacing-400) * -1);
 }
 
 .red {
