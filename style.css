@@ -17,7 +17,6 @@ body {
 
 :root {
     /* Color */
-    /* NOTE: If a color only used once, is it there any benefit to create a CSS variable for it? */
     --color-red: hsl(0, 78%, 62%);
     --color-cyan: hsl(180, 62%, 55%);
     --color-orange: hsl(34, 97%, 64%);
@@ -25,8 +24,7 @@ body {
     --color-grey-500: hsl(234, 12%, 34%);
     --color-grey-400: hsl(212, 6%, 44%);
     --color-white: hsl(0, 0%, 100%);
-    /* TODO: Convert it to hsl() */
-    --color-shadow: #83a6d27f;
+    --color-shadow: hsla(213, 47%, 67%, 0.5);
 
     /* Spacing */
     --spacing-100: 8px;
@@ -83,7 +81,6 @@ h3 {
 
 .card {
     max-width: 350px;
-
     background-color: var(--color-white);
     border-radius: var(--spacing-100);
     box-shadow: 0px 15px 30px -11px var(--color-shadow);
